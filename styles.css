@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #944141;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(155, 3, 3, 0.8);
+    color: white;
+    padding: 1em 0;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: rgb(236, 224, 224);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: #9e594d;
+}
+
+#content {
+    margin-top: 100px; /* Prevent content from being hidden behind the navbar */
+}
+
+section {
+    height: 100vh; /* Each section takes up full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+
+section:nth-child(1) {
+    background: url('https://via.placeholder.com/1920x1080?text=Fresh+Fruits') no-repeat center center/cover;
+}
+
+section:nth-child(2) {
+    background: url('https://via.placeholder.com/1920x1080?text=About+Us') no-repeat center center/cover;
+}
+
+section:nth-child(3) {
+    background: url('https://via.placeholder.com/1920x1080?text=Our+Products') no-repeat center center/cover;
+}
+
+section:nth-child(4) {
+    background: url('https://via.placeholder.com/1920x1080?text=Contact+Us') no-repeat center center/cover;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
